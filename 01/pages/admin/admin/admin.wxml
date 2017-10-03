@@ -1,0 +1,8 @@
+<view class="rows">
+  <view class="row" catchtap="onAdminProductTap">商品管理</view>
+  <view class="row" catchtap="onAdminShopTap">店铺信息</view>
+  <view class="row" catchtap="onAdminCouponTap">优惠券</view>
+  <view class="row" catchtap="onCustomerTap">客户信息</view>
+  <view class="row" catchtap="onDataverTap" wx:if="{{dataverShow}}">数据版本</view>
+</view>
+<view class="dataver-operate-area" catchlongpress="onDataverShow"></view>

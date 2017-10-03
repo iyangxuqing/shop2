@@ -1,0 +1,13 @@
+<import src='/template/userinfo/userinfo.wxml' />
+<import src='/template/mobile/mobile.wxml' />
+<import src='/template/address/address.wxml' />
+<import src='/template/coupons/coupons.wxml' />
+
+<template name="page-wode">
+  <view class="page-wode" wx:if="{{ready}}">
+    <template is="userInfo" data="{{...userInfo}}" />
+    <template is="mobile" data="{{...mobile}}" />
+    <template is="address" data="{{...address}}" />
+    <template is="coupons" data="{{coupons, youImageMode}}" />
+  </view>
+</template>

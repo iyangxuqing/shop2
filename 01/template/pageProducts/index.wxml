@@ -1,0 +1,27 @@
+<template name="page-products">
+  <view class="page-products" wx:if="{{ready}}">
+    <view class="homeHeadImages" wx:if="{{homeHeadImages}}">
+      <swiper autoplay="true" circular="true">
+        <block wx:for="{{homeHeadImages}}" wx:key="">
+          <swiper-item>
+            <image src="{{item ? item + youImageMode : ''}}" mode="aspectFill" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="homeSlogan">{{homeSlogan}}</view>
+    <view class="homeLogo">
+      <image src="{{homeLogo}}" mode="aspectFill" />
+    </view>
+    <view class="list products" wx:if="{{products}}">
+      <block wx:for="{{products}}" wx:key="">
+        <view class="item product" data-id="{{item.id}}" catchtap="{{onProductTap}}">
+          <view class="item-thumb">
+            <image src="{{item.images[0] ? item.images[0]+ youImageMode : ''}}" mode="aspectFill"></image>
+          </view>
+          <view class="item-title">{{item.title}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</template>

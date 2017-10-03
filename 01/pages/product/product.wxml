@@ -1,0 +1,25 @@
+<view class="products">
+  <swiper class="swiper-products" current="{{current}}">
+    <block wx:for="{{products}}" wx:key="" wx:for-item="product">
+      <swiper-item>
+        <view class="product">
+          <view class="product-title">{{product.title}}</view>
+          <view class="product-images">
+            <swiper class="swiper-images" indicator-dots="{{product.images.length>1}}">
+              <block wx:for="{{product.images}}" wx:key="" wx:for-item="image">
+                <swiper-item>
+                  <view class="product-image">
+                    <image src="{{image ? image + youImageMode : ''}}" mode="aspectFill" />
+                  </view>
+                </swiper-item>
+              </block>
+            </swiper>
+          </view>
+          <view class="product-descs">
+            <text>{{product.descs}}</text>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

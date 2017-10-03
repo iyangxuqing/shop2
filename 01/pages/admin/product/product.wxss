@@ -1,0 +1,42 @@
+@import '/template/swiperImagesEditor/swiperImagesEditor.wxss';
+
+page {
+  height: 100%;
+  padding: 30rpx;
+}
+
+.product {
+  height: 100%;
+}
+
+.product-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 100rpx;
+  background-color: #f2f2f2;
+  margin-bottom: 30rpx;
+}
+
+.product-title input {
+  width: 100%;
+  padding: 20rpx;
+}
+
+.product-images {
+  height: 480rpx;
+  margin-bottom: 30rpx;
+}
+
+.product-descs {
+  width: 100%;
+  height: 400rpx;
+  padding: 20rpx;
+  letter-spacing: 1px;
+  border: 1px solid #ddd;
+}
+
+.product-descs textarea {
+  width: 100%;
+  height: 100%;
+}

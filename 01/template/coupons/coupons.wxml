@@ -1,0 +1,18 @@
+<template name="coupons">
+  <view class="coupons">
+    <block wx:for="{{coupons}}" wx:key="">
+      <view class="coupon">
+        <view class="coupon-left">
+          <view class="coupon-image">
+            <image src="{{item.image ? item.image + youImageMode : ''}}" mode="aspectFill" />
+          </view>
+        </view>
+        <view class="coupon-right">
+          <view class="coupon-title">{{item.title}}</view>
+          <view class="coupon-descs">{{item.descs}}</view>
+          <view class="coupon-notes">{{item.notes}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</template>

@@ -1,0 +1,24 @@
+@import '/template/loading/loading.wxss';
+@import '/template/toptip/toptip.wxss';
+@import '/template/tabbar/tabbar.wxss';
+@import '/template/pageProducts/index.wxss';
+@import '/template/pageShop/index.wxss';
+@import '/template/pageWode/index.wxss';
+@import '/template/pageAdmin/index.wxss';
+
+page {
+  height: 100%;
+}
+
+.container {
+  height: calc(100% - 120rpx);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling : touch;
+}
+

@@ -1,0 +1,13 @@
+<import src="/template/swiperImagesEditor/swiperImagesEditor.wxml" />
+
+<view class="product">
+  <view class="product-title">
+    <input value="{{product.title}}" placeholder="输入商品名称" bindblur="onTitleBlur" />
+  </view>
+  <view class="product-images">
+    <template is="swiper-images-editor" data="{{...swiperImagesEditor, youImageMode}}" />
+  </view>
+  <view class="product-descs">
+    <textarea value="{{product.descs}}" placeholder="输入商品描述..." bindblur="onDescsBlur"></textarea>
+  </view>
+</view>

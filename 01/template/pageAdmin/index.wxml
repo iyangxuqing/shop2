@@ -1,0 +1,12 @@
+<template name="page-admin">
+  <view class="page-admin">
+    <view class="admin-rows">
+      <view class="admin-row" catchtap="{{onAdminProductTap}}">商品管理</view>
+      <view class="admin-row" catchtap="{{onAdminShopTap}}">店铺信息</view>
+      <view class="admin-row" catchtap="{{onAdminCouponTap}}">优惠券</view>
+      <view class="admin-row" catchtap="{{onCustomerTap}}">客户信息</view>
+      <view class="admin-row" catchtap="{{onDataverTap}}" wx:if="{{dataverShow}}">数据版本</view>
+    </view>
+    <view class="dataver-operate-area" catchlongpress="{{onDataverShow}}"></view>
+  </view>
+</template>

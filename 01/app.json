@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/product/product",
+    "pages/addressEditor/addressEditor",
+    "pages/admin/admin/admin",
+    "pages/admin/shop/shop",
+    "pages/admin/products/products",
+    "pages/admin/product/product",
+    "pages/admin/coupons/coupons",
+    "pages/admin/coupon/coupon",
+    "pages/admin/customer/customer",
+    "pages/admin/datavers/datavers"
+  ],
+
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#f2f2f2"
+  },
+
+  "networkTimeout": {
+    "request": 30000
+  }
+
+}

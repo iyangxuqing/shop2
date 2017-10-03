@@ -1,0 +1,25 @@
+<import src="/template/loading/loading.wxml" />
+<template is="loading" data="{{...loading}}" />
+<import src="/template/toptip/toptip.wxml" />
+<template is="toptip" data="{{...toptip}}" />
+<import src="/template/tabbar/tabbar.wxml" />
+<template is="tabbar" data="{{...tabbar}}" />
+<import src="/template/pageProducts/index.wxml" />
+<import src="/template/pageShop/index.wxml" />
+<import src="/template/pageWode/index.wxml" />
+<import src="/template/pageAdmin/index.wxml" />
+
+<view class="container">
+  <view class="page page-1" wx:if="{{page==0}}">
+    <template is="page-products" data="{{...pageProducts, youImageMode}}" />
+  </view>
+  <view class="page page-2" wx:if="{{page==1}}">
+    <template is="page-shop" data="{{...pageShop, youImageMode}}" />
+  </view>
+  <view class="page page-3" wx:if="{{page==2}}">
+    <template is="page-wode" data="{{...pageWode, youImageMode}}" />
+  </view>
+  <view class="page page-4" wx:if="{{page==3}}">
+    <template is="page-admin" data="{{...pageAdmin}}" />
+  </view>
+</view>

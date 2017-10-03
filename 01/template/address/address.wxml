@@ -1,0 +1,12 @@
+<template name="address">
+  <view class="address-row" catchtap="{{onAddressTap}}">
+    <view class="address-row-icon">
+       <image src="/images/icon/map-pin.png" /> 
+    </view>
+    <view class="address-row-label">住所地址</view>
+    <view class="address-row-value">{{district}}{{detail}}</view>
+    <view class="address-row-icon">
+      <image src="/images/icon/enter.png" />
+    </view>
+  </view>
+</template>

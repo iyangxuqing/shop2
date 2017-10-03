@@ -1,0 +1,6 @@
+module.exports.sid = 's000001'
+module.exports.version = 'v1.0.0'
+module.exports.apiUrl = 'https://yixing01.applinzi.com/'
+module.exports.cosImageHost = 'http://shop-1253299728.cossh.myqcloud.com/'
+module.exports.youImageHost = 'http://shop-1253299728.picsh.myqcloud.com/'
+module.exports.youImageMode = '?imageMogr2/thumbnail/500x'

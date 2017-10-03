@@ -1,0 +1,9 @@
+@import '/template/userinfo/userinfo.wxss';
+@import '/template/mobile/mobile.wxss';
+@import '/template/address/address.wxss';
+@import '/template/coupons/coupons.wxss';
+
+.page-wode {
+  padding: 0 30rpx;
+  background-color: #f2f2f2;
+}
